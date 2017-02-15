@@ -1,0 +1,16 @@
+    #wrapper
+      .main
+        .header
+          h1.title
+            strong Agile South West
+
+          img(src="images/agile-south-west-logo.png" class="logo")
+          
+        .content
+          .information
+            h2 Enter your email to join us on Slack!
+            form(method="POST", action="/invite")#join-form.form
+              input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+              if tokenRequired
+                input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
+              input(type="submit", value="Join").submit

@@ -13,31 +13,11 @@ height: 100%;
 width: 100%;
 }
 
-
-#wrapper{
-max-width: 100%;
-width: 940px;
-margin: 0 auto;
-}
-
-.main{
-max-width: 100%;
-width: 940px;
-float: left;
-}
-
-.header, .content, .bottom, .sep2{
-width: 100%;
-float: left;
-}
-
-
-
 .header{
 	margin-top: 160px;
 	margin-bottom: 40px;
+	text-align: center;
 }
-
 
 h1{
 	font-family: 'Open Sans', sans-serif;
@@ -46,6 +26,11 @@ h1{
 	font-size: 50px;
 	font-weight: 300;
 	margin: 0 0 10px 0;
+}
+
+.title {
+	position: absolute;
+	left: -1500px;
 }
 
 
@@ -71,7 +56,11 @@ h2 strong{
 .information{
 width: 480px;
 padding-top: 35px;
-margin: 0 auto;
+/*margin: 0 auto;*/
+}
+
+.logo {
+	width:300px;
 }
 
 h3{
@@ -88,13 +77,13 @@ display: block;
 
 .form{
 position: relative;
-width: 478px;
+/*width: 478px;*/
 margin-top: 20px;
 }
 
 .field{
 background: url(../images/field.png) repeat;
-width: 448px;
+/*width: 448px;*/
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
 border: none;
 font-style: italic;
@@ -110,37 +99,19 @@ outline: none;
 	padding: 14px;
 	}
 @media only screen and (max-width: 480px)  {
-	.information{
-	width: 100%;
-	}
 	.form{
-	width: 90%;
+	/*width: 90%;*/
 	margin-left: 5%;
 	margin-right: 5%;
 	}
 
 	.field {
-	width: 90%;
+	/*width: 90%;*/
 	}
 }
 
-.submit{
-position: absolute;
-right: 15px;
-top: 13px;
-padding: 3px 10px;
--webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
-background: #ffffff;
-border: none;
-font-family: 'Lato', sans-serif;
-font-size: 14px;
-font-weight: bold;
-cursor: pointer;
-}
-
-
-.submit:hover{
-background: #eeeeee;
+#slack-email {
+	background: url(../images/field.png) repeat;
 }
 
 .error {
@@ -157,4 +128,19 @@ a {
 a:visited,
 a:hover {
   color: #7EB6FF;
+}
+
+.action {
+	
+}
+
+.action-inner {
+	text-align: center;
+	margin: 1em;
+	background-color: #fff;
+	padding: 1em;
+}
+
+.action-inner img {
+	width: 100%;
 }
