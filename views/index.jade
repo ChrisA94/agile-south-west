@@ -13,26 +13,41 @@ html
         .col-xs-12.header
           h1.title Agile South West
           img(src="images/agile-south-west-logo.png" class="logo")
+      
+      .row
+        .col-md-4.action
+          .action-inner
+            h2 Welcome to Agile South West
+            p We hope you enjoy your visit!!!
 
       .row
         .col-md-4.action
           .action-inner
             h2 Join us on slack
             p Join our slack room and be a part of the conversation
-            form(method="POST", action="/invite")#join-form.form
+            form(method="post", action="/invite")#join-form.form
               <div class="form-group">
               <label for="email" class="title">Email address</label>
               <input type="email" name="email" class="form-control" id="slack-email" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-              input(type="submit", value="Join").btn.btn-primary
         .col-md-4.action
           .action-inner
-            h2 Upcomming events
+            input(type="submit", value="Join").btn.btn-primary
+
+      .row
+        .col-md-4.action
+          .action-inner
+            h2 Contact details
+            p Listed here
+            p Possibly ????
+        .col-md-4.action
+          .action-inner
+            h2 Upcoming events
             img(src="images/meetup.jpeg" alt="Agile South West onmeetup")
         .col-md-4.action
           .action-inner
             h2 Follow us on Twitter
-            p this is some text
+            p @AgileSouthWest
     script.
       var tokenRequired = #{tokenRequired};
       var form = document.getElementById('join-form');
