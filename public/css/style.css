@@ -139,7 +139,7 @@ a:hover {
 	color: #b3c6ff;
 }
 
-.action-inner {
+.action-inner1 {
 	text-align: center;
 	margin: 1em;
 	background-color: #4d79ff;
@@ -147,7 +147,6 @@ a:hover {
 	border-width: 5px;
 	border-style: solid;
 	border-color: #ccd9ff; 
-
 }
 
 .action-inner img {
@@ -155,6 +154,14 @@ a:hover {
 }
 
 .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row1 {
   width: 100%;
   display: flex;
   align-items: center;
