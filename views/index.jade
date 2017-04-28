@@ -22,14 +22,14 @@ html
             p(style="color:#3498db;") We hope you enjoy your visit!!!
 
       .row
-        .col-md-4.action(style="width:2000px;")
-          .action-inner1 
+        .col-md-4.action
+          .action-inner1(style="width:100%;") 
             h2 Join us on slack
             p Join our slack room and be a part of the conversation
             form(method="post", action="/invite")#join-form.form
               <div class="form-group">
               <label for="email" class="title">Email address</label>
-              <input type="email" name="email" class="form-control" id="slack-email" aria-describedby="emailHelp" placeholder="Enter email">
+              <input type="email" name="email" class="form-control" id="slack-email" aria-describedby="emailHelp" placeholder="Enter email" input type="text" placeholder="Value">
               input(type="submit", value="Join").btn.btn-primary
               </div>
 
